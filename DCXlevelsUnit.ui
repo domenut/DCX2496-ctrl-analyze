@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LevelsFrame</class>
+ <widget class="QFrame" name="LevelsFrame">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>181</width>
+    <height>430</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Frame</string>
+  </property>
+  <property name="toolTipDuration">
+   <number>-1</number>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayoutDEBUG">
+   <item>
+    <widget class="QFrame" name="frame_level_main_ch">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>156</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>125</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <property name="leftMargin">
+       <number>6</number>
+      </property>
+      <item>
+       <widget class="QSplitter" name="splitter_levels_ch">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="childrenCollapsible">
+         <bool>true</bool>
+        </property>
+        <widget class="QFrame" name="frame_levels_ch">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>300</width>
+           <height>200</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_gains_chA">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QWidget" name="widget_gains" native="true">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_4">
+             <item row="0" column="0">
+              <widget class="QwtKnob" name="Hi_gain_remote">
+               <property name="font">
+                <font>
+                 <pointsize>5</pointsize>
+                </font>
+               </property>
+               <property name="lowerBound">
+                <double>-15.000000000000000</double>
+               </property>
+               <property name="upperBound">
+                <double>15.000000000000000</double>
+               </property>
+               <property name="scaleMaxMajor">
+                <number>6</number>
+               </property>
+               <property name="scaleMaxMinor">
+                <number>1</number>
+               </property>
+               <property name="totalSteps">
+                <UInt>300</UInt>
+               </property>
+               <property name="knobStyle">
+                <enum>QwtKnob::Styled</enum>
+               </property>
+               <property name="knobWidth">
+                <number>40</number>
+               </property>
+               <property name="totalAngle">
+                <double>270.000000000000000</double>
+               </property>
+               <property name="markerStyle">
+                <enum>QwtKnob::Tick</enum>
+               </property>
+               <property name="markerSize">
+                <number>12</number>
+               </property>
+               <property name="borderWidth">
+                <number>2</number>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="2">
+              <widget class="QLabel" name="label_Gain_ch3">
+               <property name="text">
+                <string>Mids</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QLabel" name="label_Gain_ch5">
+               <property name="text">
+                <string extracomment="rrllll">Highs</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QwtKnob" name="Mid_gain_remote">
+               <property name="font">
+                <font>
+                 <pointsize>5</pointsize>
+                </font>
+               </property>
+               <property name="lowerBound">
+                <double>-15.000000000000000</double>
+               </property>
+               <property name="upperBound">
+                <double>15.000000000000000</double>
+               </property>
+               <property name="scaleMaxMajor">
+                <number>6</number>
+               </property>
+               <property name="scaleMaxMinor">
+                <number>1</number>
+               </property>
+               <property name="totalSteps">
+                <UInt>300</UInt>
+               </property>
+               <property name="knobStyle">
+                <enum>QwtKnob::Styled</enum>
+               </property>
+               <property name="knobWidth">
+                <number>40</number>
+               </property>
+               <property name="markerStyle">
+                <enum>QwtKnob::Tick</enum>
+               </property>
+               <property name="markerSize">
+                <number>12</number>
+               </property>
+               <property name="borderWidth">
+                <number>2</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QFrame" name="frame_level_ch">
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_15">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item row="4" column="1">
+           <widget class="QLabel" name="label_Gain_ch">
+            <property name="text">
+             <string>In vol A</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QwtKnob" name="Gain_ch">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>5</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="lowerBound">
+             <double>-15.000000000000000</double>
+            </property>
+            <property name="upperBound">
+             <double>15.000000000000000</double>
+            </property>
+            <property name="scaleMaxMajor">
+             <number>6</number>
+            </property>
+            <property name="scaleMaxMinor">
+             <number>5</number>
+            </property>
+            <property name="scaleStepSize">
+             <double>0.000000000000000</double>
+            </property>
+            <property name="totalSteps">
+             <UInt>300</UInt>
+            </property>
+            <property name="pageSteps">
+             <UInt>1</UInt>
+            </property>
+            <property name="knobStyle">
+             <enum>QwtKnob::Styled</enum>
+            </property>
+            <property name="knobWidth">
+             <number>92</number>
+            </property>
+            <property name="totalAngle">
+             <double>270.000000000000000</double>
+            </property>
+            <property name="numTurns">
+             <number>1</number>
+            </property>
+            <property name="markerStyle">
+             <enum>QwtKnob::Tick</enum>
+            </property>
+            <property name="markerSize">
+             <number>12</number>
+            </property>
+            <property name="borderWidth">
+             <number>3</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSpinBox" name="EqNumber_ch">
+        <property name="maximumSize">
+         <size>
+          <width>600</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="frame">
+         <bool>true</bool>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::UpDownArrows</enum>
+        </property>
+        <property name="suffix">
+         <string/>
+        </property>
+        <property name="prefix">
+         <string>Eq's: </string>
+        </property>
+        <property name="minimum">
+         <number>0</number>
+        </property>
+        <property name="maximum">
+         <number>9</number>
+        </property>
+        <property name="value">
+         <number>4</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QwtKnob</class>
+   <extends>QWidget</extends>
+   <header>qwt_knob.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
