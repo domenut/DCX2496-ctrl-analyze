@@ -5,6 +5,6 @@ For Linux Desktop.
 
 Incorporates real-time analyzer.
 
-This repo has dependancies and possibly submodules which I need 
-to sort out and test.
+This repo has gone out of date with dependancies, 
+I need to sort this out and re-test.
 
