@@ -1,0 +1,1153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MeterDialog</class>
+ <widget class="QDialog" name="MeterDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>272</width>
+    <height>203</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Levels</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QFrame" name="frame_A">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>20</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QwtThermo" name="Meter_A">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>6</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(190, 126, 95);</string>
+        </property>
+        <property name="lowerBound">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="upperBound">
+         <double>6.000000000000000</double>
+        </property>
+        <property name="scaleMaxMajor">
+         <number>0</number>
+        </property>
+        <property name="scaleMaxMinor">
+         <number>19</number>
+        </property>
+        <property name="scaleStepSize">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="scalePosition">
+         <enum>QwtThermo::LeadingScale</enum>
+        </property>
+        <property name="originMode">
+         <enum>QwtThermo::OriginMinimum</enum>
+        </property>
+        <property name="alarmLevel">
+         <double>5.000000000000000</double>
+        </property>
+        <property name="origin">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="spacing">
+         <number>1</number>
+        </property>
+        <property name="borderWidth">
+         <number>2</number>
+        </property>
+        <property name="pipeWidth">
+         <number>10</number>
+        </property>
+        <property name="value">
+         <double>-1.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_A">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>A</string>
+        </property>
+        <property name="textFormat">
+         <enum>Qt::PlainText</enum>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="frame_B">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>20</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QwtThermo" name="Meter_B">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>6</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(190, 126, 95);</string>
+        </property>
+        <property name="lowerBound">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="upperBound">
+         <double>6.000000000000000</double>
+        </property>
+        <property name="scaleMaxMajor">
+         <number>0</number>
+        </property>
+        <property name="scaleMaxMinor">
+         <number>19</number>
+        </property>
+        <property name="scaleStepSize">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="scalePosition">
+         <enum>QwtThermo::LeadingScale</enum>
+        </property>
+        <property name="originMode">
+         <enum>QwtThermo::OriginMinimum</enum>
+        </property>
+        <property name="alarmLevel">
+         <double>5.000000000000000</double>
+        </property>
+        <property name="origin">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="spacing">
+         <number>1</number>
+        </property>
+        <property name="borderWidth">
+         <number>2</number>
+        </property>
+        <property name="pipeWidth">
+         <number>10</number>
+        </property>
+        <property name="value">
+         <double>-1.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_B">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>B</string>
+        </property>
+        <property name="textFormat">
+         <enum>Qt::PlainText</enum>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="frame_C">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>20</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QwtThermo" name="Meter_C">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>6</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(190, 126, 95);</string>
+        </property>
+        <property name="lowerBound">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="upperBound">
+         <double>6.000000000000000</double>
+        </property>
+        <property name="scaleMaxMajor">
+         <number>0</number>
+        </property>
+        <property name="scaleMaxMinor">
+         <number>19</number>
+        </property>
+        <property name="scaleStepSize">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="scalePosition">
+         <enum>QwtThermo::LeadingScale</enum>
+        </property>
+        <property name="originMode">
+         <enum>QwtThermo::OriginMinimum</enum>
+        </property>
+        <property name="alarmLevel">
+         <double>5.000000000000000</double>
+        </property>
+        <property name="origin">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="spacing">
+         <number>1</number>
+        </property>
+        <property name="borderWidth">
+         <number>2</number>
+        </property>
+        <property name="pipeWidth">
+         <number>10</number>
+        </property>
+        <property name="value">
+         <double>-1.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_C">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>C</string>
+        </property>
+        <property name="textFormat">
+         <enum>Qt::PlainText</enum>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="frame_1">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>20</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QwtThermo" name="Meter_1">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>6</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(170, 0, 0);</string>
+        </property>
+        <property name="lowerBound">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="upperBound">
+         <double>6.000000000000000</double>
+        </property>
+        <property name="scaleMaxMajor">
+         <number>0</number>
+        </property>
+        <property name="scaleMaxMinor">
+         <number>19</number>
+        </property>
+        <property name="scaleStepSize">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="scalePosition">
+         <enum>QwtThermo::LeadingScale</enum>
+        </property>
+        <property name="originMode">
+         <enum>QwtThermo::OriginMinimum</enum>
+        </property>
+        <property name="alarmLevel">
+         <double>5.000000000000000</double>
+        </property>
+        <property name="origin">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="spacing">
+         <number>1</number>
+        </property>
+        <property name="borderWidth">
+         <number>2</number>
+        </property>
+        <property name="pipeWidth">
+         <number>10</number>
+        </property>
+        <property name="value">
+         <double>-1.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_1">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>1</string>
+        </property>
+        <property name="textFormat">
+         <enum>Qt::PlainText</enum>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="frame_2">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>20</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_5">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QwtThermo" name="Meter_2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>6</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(170, 0, 0);</string>
+        </property>
+        <property name="lowerBound">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="upperBound">
+         <double>6.000000000000000</double>
+        </property>
+        <property name="scaleMaxMajor">
+         <number>0</number>
+        </property>
+        <property name="scaleMaxMinor">
+         <number>19</number>
+        </property>
+        <property name="scaleStepSize">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="scalePosition">
+         <enum>QwtThermo::LeadingScale</enum>
+        </property>
+        <property name="originMode">
+         <enum>QwtThermo::OriginMinimum</enum>
+        </property>
+        <property name="alarmLevel">
+         <double>5.000000000000000</double>
+        </property>
+        <property name="origin">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="spacing">
+         <number>1</number>
+        </property>
+        <property name="borderWidth">
+         <number>2</number>
+        </property>
+        <property name="pipeWidth">
+         <number>10</number>
+        </property>
+        <property name="value">
+         <double>-1.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>2</string>
+        </property>
+        <property name="textFormat">
+         <enum>Qt::PlainText</enum>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="frame_3">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>20</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_6">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QwtThermo" name="Meter_3">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>6</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 170, 0);</string>
+        </property>
+        <property name="lowerBound">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="upperBound">
+         <double>6.000000000000000</double>
+        </property>
+        <property name="scaleMaxMajor">
+         <number>0</number>
+        </property>
+        <property name="scaleMaxMinor">
+         <number>19</number>
+        </property>
+        <property name="scaleStepSize">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="scalePosition">
+         <enum>QwtThermo::LeadingScale</enum>
+        </property>
+        <property name="originMode">
+         <enum>QwtThermo::OriginMinimum</enum>
+        </property>
+        <property name="alarmLevel">
+         <double>5.000000000000000</double>
+        </property>
+        <property name="origin">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="spacing">
+         <number>1</number>
+        </property>
+        <property name="borderWidth">
+         <number>2</number>
+        </property>
+        <property name="pipeWidth">
+         <number>10</number>
+        </property>
+        <property name="value">
+         <double>-1.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 255, 0);</string>
+        </property>
+        <property name="text">
+         <string>3</string>
+        </property>
+        <property name="textFormat">
+         <enum>Qt::PlainText</enum>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="frame_4">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>20</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_7">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QwtThermo" name="Meter_4">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>6</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 170, 0);</string>
+        </property>
+        <property name="lowerBound">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="upperBound">
+         <double>6.000000000000000</double>
+        </property>
+        <property name="scaleMaxMajor">
+         <number>0</number>
+        </property>
+        <property name="scaleMaxMinor">
+         <number>19</number>
+        </property>
+        <property name="scaleStepSize">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="scalePosition">
+         <enum>QwtThermo::LeadingScale</enum>
+        </property>
+        <property name="originMode">
+         <enum>QwtThermo::OriginMinimum</enum>
+        </property>
+        <property name="alarmLevel">
+         <double>5.000000000000000</double>
+        </property>
+        <property name="origin">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="spacing">
+         <number>1</number>
+        </property>
+        <property name="borderWidth">
+         <number>2</number>
+        </property>
+        <property name="pipeWidth">
+         <number>10</number>
+        </property>
+        <property name="value">
+         <double>-1.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 255, 0);</string>
+        </property>
+        <property name="text">
+         <string>4</string>
+        </property>
+        <property name="textFormat">
+         <enum>Qt::PlainText</enum>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="frame_5">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>20</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_8">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QwtThermo" name="Meter_5">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>6</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 207);</string>
+        </property>
+        <property name="lowerBound">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="upperBound">
+         <double>6.000000000000000</double>
+        </property>
+        <property name="scaleMaxMajor">
+         <number>0</number>
+        </property>
+        <property name="scaleMaxMinor">
+         <number>19</number>
+        </property>
+        <property name="scaleStepSize">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="scalePosition">
+         <enum>QwtThermo::LeadingScale</enum>
+        </property>
+        <property name="originMode">
+         <enum>QwtThermo::OriginMinimum</enum>
+        </property>
+        <property name="alarmLevel">
+         <double>5.000000000000000</double>
+        </property>
+        <property name="origin">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="spacing">
+         <number>1</number>
+        </property>
+        <property name="borderWidth">
+         <number>2</number>
+        </property>
+        <property name="pipeWidth">
+         <number>10</number>
+        </property>
+        <property name="value">
+         <double>-1.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 255);</string>
+        </property>
+        <property name="text">
+         <string>5</string>
+        </property>
+        <property name="textFormat">
+         <enum>Qt::PlainText</enum>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="frame_6">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>20</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_9">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QwtThermo" name="Meter_6">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>6</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 207);</string>
+        </property>
+        <property name="lowerBound">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="upperBound">
+         <double>6.000000000000000</double>
+        </property>
+        <property name="scaleMaxMajor">
+         <number>0</number>
+        </property>
+        <property name="scaleMaxMinor">
+         <number>19</number>
+        </property>
+        <property name="scaleStepSize">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="scalePosition">
+         <enum>QwtThermo::LeadingScale</enum>
+        </property>
+        <property name="originMode">
+         <enum>QwtThermo::OriginMinimum</enum>
+        </property>
+        <property name="alarmLevel">
+         <double>5.000000000000000</double>
+        </property>
+        <property name="origin">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="spacing">
+         <number>1</number>
+        </property>
+        <property name="borderWidth">
+         <number>2</number>
+        </property>
+        <property name="pipeWidth">
+         <number>10</number>
+        </property>
+        <property name="value">
+         <double>-1.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_6">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 255);</string>
+        </property>
+        <property name="text">
+         <string>6</string>
+        </property>
+        <property name="textFormat">
+         <enum>Qt::PlainText</enum>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QwtThermo</class>
+   <extends>QWidget</extends>
+   <header>qwt_thermo.h</header>
+  </customwidget>
+ </customwidgets>
+ <includes>
+  <include location="local">@dialog-setWindowFlags( ( (dialog-windowFlags() | Qt::CustomizeWindowHint)</include>
+  <include location="local">&amp; ~Qt::WindowCloseButtonHint) );@</include>
+ </includes>
+ <resources/>
+ <connections/>
+ <designerdata>
+  <property name="gridDeltaX">
+   <number>6</number>
+  </property>
+  <property name="gridDeltaY">
+   <number>6</number>
+  </property>
+  <property name="gridSnapX">
+   <bool>true</bool>
+  </property>
+  <property name="gridSnapY">
+   <bool>true</bool>
+  </property>
+  <property name="gridVisible">
+   <bool>true</bool>
+  </property>
+ </designerdata>
+</ui>
