@@ -13,7 +13,7 @@ data
 dataParsed
 jnoise
 dcx_dump
-**/build
+**/build/*
 **/built*
 **/dist
 **/dist.bak
@@ -22,4 +22,6 @@ dcx_dump
 **/__pycache__
 **/recycling
 **/ReferenceFiles
-**/Saved_binary
+**/Saved_binary/*
+!Saved_binary/test.dcx
+

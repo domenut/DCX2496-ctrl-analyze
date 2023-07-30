@@ -771,9 +771,9 @@ class SpectrumAnalyserMixin():
             self.timer_spectrum_draw.stop()
             self.spectrum_io_thread.join()
             os.system(r'pkill -f spectrum.out')
-            os.system(r'pkill -f jnoise')
+            # os.system(r'pkill -f jnoise')
             self.fft_process.wait()
-            self.noise_gen_process.wait()
+            # self.noise_gen_process.wait()
 
     def spectrum_smoothing_factor_handler(self):
         self.pause = True

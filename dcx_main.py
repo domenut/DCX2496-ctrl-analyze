@@ -877,7 +877,7 @@ if __name__ == "__main__":
     window.show()
     app.exec()
     import os
-    os.system(r'pkill -f jnoise')
+    # os.system(r'pkill -f jnoise')
     os.system("pkill -f spectrum.out")
     os.system("pkill -f mainDCX.py")
     print('App Exited')
